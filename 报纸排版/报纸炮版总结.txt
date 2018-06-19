@@ -1,0 +1,21 @@
+html：结构分析有部分更深入理解，
+      
+css：排版样式有深入理解
+
+css待加强部分知识：1.整体class类名，多而杂
+		   2.高内聚，低耦合待熟练
+		   3.父子块关联，同级块关联理解
+		   4.父级元素的定位优先，多分div嵌套限制定位
+		   5.text-align
+		   6.浮动和还是各种定位的选取，浮动及时清除（清除浮动的3+种方式）
+		   7.水平居中，垂直居中定位元素和文本的n中方式
+		   8.背景图片和图片链接的使用和注意点（css给一般标签和a标签上background-image：url（最好不加引号） 注意这种方式的图片慎用绝对路径 导入的这种图片浮在各种文字和图片上，img标签的图片一般会挤开其他元素内容）
+		   9.rgba（255,255,255,0.9） -----  透明transparent===rgba(0,0,0,0)   注意最后的透明度参数和opacity的区别
+		   10.关于首字放大的情况下加下划线会导致下划线不平问题的解决：<p> About</p>
+									      p{text-decoration:underline;  font-variant:small-caps;}  //把段落设置成小写大型字母体
+									      p:first-letter{text-transform:uppercase;}    //伪元素的一种，确定首字格式，内容是定义仅有的大写字母
+		   11.两个经典bug的识别和解决方案（1.border  2.bfc）仔细分析bfc中的display：inline-block；position：absolute；float：left/right ；over-flow：hidden；的使用方法
+		   12.关于auto的使用理解
+		   13.关于首字放大之后跟随的汉字底对齐改成顶对齐的方法：给父级元素设置伪元素::first-letter的时候加float：left；即可
+		   14.letter-spacing使用,设置字间距（含字母），如要设置单词间距应改用word-spacing
+		   15.vertical-align仅对文本元素（inline/inline-block）有效果，
